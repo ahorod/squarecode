@@ -1,12 +1,13 @@
+
 var pigLatin = function(input) {
-  if (input.match(/[a-z]/i)){
-    alert("letter");
-  }
-  else {
-    alert("not letters")
-  }
+  var inputArr = input.split ("");
+  if (inputArr[0] === "a" || inputArr[0] ==="e" ||inputArr[0] === "i" ||inputArr[0] === "o" ||inputArr[0] === "u" ){
+   inputArr.push("ay");
+   alert(inputArr);
+}
 };
-$(function() {
+
+$(document).ready(function(){
   $("form#pig-latin").submit(function(event) {
     event.preventDefault();
     var input = $("#input").val();

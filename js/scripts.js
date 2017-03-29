@@ -5,6 +5,14 @@ var pigLatin = function(input) {
    inputArr.push("ay");
    alert(inputArr);
 }
+else {
+  for (i=0; i<=inputArr.length; i++){
+    if (inputArr[i] !== "a" ||  inputArr[i] !== "e" || inputArr[i] !== "i" || inputArr[i] !== "o" ||  inputArr[i] !== "u"){
+      var consonant = inputArr[i];
+      console.log(consonant);
+      }
+   }
+}
 };
 
 $(document).ready(function(){

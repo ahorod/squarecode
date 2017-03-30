@@ -1,0 +1,8 @@
+removes panctuation from sentence |Hello, world!| Helloworld
+lowercases the sentence |Helloworld| helloworld
+counts length of sentence|helloworld|10
+takes rounded up sqrt of sentence length to decide size of square |10|4
+splits the sentence to array
+splits array to chunks
+pushes each chunks to new array |helloworld| arr1[hel], arr2[low],arr3[orl], arr4[d]
+reads square |helloworld|hlod eor lwl

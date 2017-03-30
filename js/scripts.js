@@ -128,11 +128,14 @@ var convertToThousands = function(number) {
   }
 
   var resultThousand= romanStringThousands + resultDigit;
-  for(var j = 0; j < resultThousand.length; j++) {
-    if(resultThousand[j] === " ") {
-      resultThousand = resultThousand[j].replace(" ","");
-    }
-  }
+  // for(var j = 0; j < resultThousand.length; j++) {
+  //   if(resultThousand[j] === " ") {
+  //     resultThousand = resultThousand[j].replace(" ","");
+  //   }
+  // }
+  resultThousand = resultThousand.split(" ");
+  resultThousand = resultThousand.join("");
+
   console.log(resultThousand);
   return resultThousand;
 

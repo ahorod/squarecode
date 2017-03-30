@@ -1,0 +1,20 @@
+returns unique roman numbers for numbers
+|1|I |5|V |10|X |50|L |100|C |500|D |1000|M
+
+return numbers starting with 4
+|4|IV |40|XL |400|CD
+
+return numbers starting with 9
+|9|IX |90|XC |900|CM
+
+returns roman number for 1 to 3 |1| I |2|II |3|III
+
+returns roman number for 6 to 8 |6| VI |7|VII |8|VIII
+
+returns roman number for tens ending with 0 |10| X
+|20| XX |30|XXX |40|XL |50|L |60|LX |70|LXX |80| LXXX |90| XC
+
+returns roman number for hundreds ending with 0 |100| C
+|200| CC |300|CCC |400|CD |500|D |600|DC |700|DCC |800| DCCC |900| CM
+
+return a error message if number is greater than 3,999

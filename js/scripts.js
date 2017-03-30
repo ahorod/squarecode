@@ -46,7 +46,7 @@ var convertToTens = function(number) {
   } else if (tensInteger >5 && tensInteger < 9) {
     romanStringTen = "L"
     for (i=0; i < tensInteger-5; i++){
-      romanStringTen += "I";
+      romanStringTen += "X";
     }
   } else if (tensInteger === 9) {
     romanStringTen += "XC";

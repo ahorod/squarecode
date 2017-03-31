@@ -2,33 +2,27 @@
 var convertSquareCode = function(sentence) {
   //removes panctuation from sentence
 sentence = sentence.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+
 sentence = sentence.replace(/ /g,'');
-// sentence = sentence.replace(' ','');
 console.log(sentence);
 sentence = sentence.toLowerCase();
 var length = sentence.length;
 var chunk = Math.sqrt(length);
+var columns, rows;
 if (chunk%1 > 0){
-  var columns = Math.ceil(chunk);
-  var rows = Math.floor(chunk);
+  chunk = Math.floor(chunk);
 }
 else {
-  columns = chunk;
-  rows = chunk;
+  chunk = chunk;
 }
-// var sentenceArr = sentence.split('');
-console.log(sentence);
-// var newArray = [];
-// var i,j,temparray;
-// for (i=0,j=sentenceArr.length; i<j; i+=rows) {
-//     temparray = sentenceArr.slice(i,i+columns);
-//     newArray.push(temparray);
-//   console.log(temparray);
-// }
+var sentenceArr = sentence.split('');
+console.log(sentenceArr);
+var newArray = [];
 
-sentence.match(/.{1, columns}/g);
-console.log(sentence);
-
+for (i=0; i < sentenceArr.length;i+=chunk) {
+    newArray = sentenceArr.slice(i,i+chunk);
+    console.log(newArray);
+}
 
 // for (var i=0; i < newArray.length; i++){
 //   for (var j=0; j < newArray[i].length; j++){
